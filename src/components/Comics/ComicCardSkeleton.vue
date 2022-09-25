@@ -1,5 +1,5 @@
 <template>
-  <div class="user-card d-flex">
+  <div class="comic-card d-flex">
     <div class="card-avatar d-flex justify-content-center">
       <Placeholder width="100%" height="200px" borderRadius="2%" />
     </div>
@@ -32,7 +32,7 @@ export default {
   gap: 8px;
   width: 100%;
 }
-.user-card {
+.comic-card {
   padding: 15px;
   background-color: #f1f1f1;
   box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);

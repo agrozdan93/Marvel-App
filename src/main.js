@@ -57,14 +57,6 @@ new Vue({
 [] make wrappers to look code clenaer
 [] testing, check bugs and fix it
 [] clean code, made some stuff simplified, adjusting, etc
-[] install markdaon and create readme file
-[] push to git
-
-Iz home se prebacuje sve u ComicList (wrapper za sve)
-
-ComicList ce ima
-Wrapper za (search input i Datepicker)
-Wrapper za (card list and skeleton)
-
-mora se naprave dodanti custom eventi !
+[x]create readme file
+[x] push to git
 */

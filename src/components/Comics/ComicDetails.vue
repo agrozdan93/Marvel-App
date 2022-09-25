@@ -50,7 +50,6 @@
           >
         </div>
       </div>
-      <!-- <div class="comic-content__pagination"></div> -->
     </div>
   </BContainer>
 </template>
@@ -71,7 +70,6 @@ export default {
     return {
       comic: {
         thumbnail: "",
-        isLoad: false,
       },
     };
   },
@@ -83,16 +81,9 @@ export default {
     isImageAvailable() {
       return !this.getComic.thumbnail.path.includes("image_not_available");
     },
-    l() {
-      return this.isLoad;
-    },
   },
   mounted() {
     window.addEventListener("unload", this.reloadPage);
-
-    setTimeout(() => {
-      this.isLoad = true;
-    }, 300);
   },
   methods: {
     goBack() {
@@ -128,14 +119,12 @@ export default {
 .comic-content {
   width: 95%;
   position: relative;
-  // max-width: 800px;
   margin: auto;
   background: #fff;
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
   padding: 25px;
   border-radius: 25px;
   height: 90vh;
-  // height: auto;
   transition: all 0.3s;
 
   @media screen and (max-width: 992px) {
@@ -144,9 +133,7 @@ export default {
   }
 
   @media screen and (max-width: 768px) {
-    // min-height: 500px;
     height: auto;
-    // margin: 180px auto;
   }
 
   @media screen and (max-height: 500px) and (min-width: 992px) {
@@ -163,10 +150,8 @@ export default {
   }
 
   &__img {
-    // width: 300px;
     height: 85vh;
     width: auto;
-    // height: auto;
     flex-shrink: 0;
     box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);
     border-radius: 20px;
@@ -200,7 +185,6 @@ export default {
     @media screen and (max-width: 768px) {
       transform: translate(0);
       height: 65vh;
-      // width: 90%;
     }
     @media screen and (max-width: 576px) {
       width: 95%;

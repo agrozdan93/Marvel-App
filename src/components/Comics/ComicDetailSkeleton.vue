@@ -73,7 +73,6 @@ export default {
   padding: 25px;
   border-radius: 25px;
   height: 90vh;
-  // height: auto;
   transition: all 0.3s;
 
   @media screen and (max-width: 992px) {
@@ -101,10 +100,8 @@ export default {
   }
 
   &__img {
-    // width: 300px;
     height: 85vh;
     width: auto;
-    // height: auto;
     flex-shrink: 0;
     box-shadow: 4px 13px 30px 1px rgba(252, 56, 56, 0.2);
     border-radius: 20px;

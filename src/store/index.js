@@ -34,7 +34,6 @@ export default new Vuex.Store({
   },
   actions: {
     async appInit(state, params) {
-      console.log(params, "APP INIT");
       if (params.id) state.dispatch("getComicDetails", params.id);
       else state.dispatch("setComicsList", params);
     },
@@ -77,31 +76,3 @@ export default new Vuex.Store({
     isComicLoad: (state) => state.isComicLoad,
   },
 });
-
-// async filterComic(state, userInput) {
-//   this.state.comics = [];
-//   const data = await axios.get(API_URI, {
-//     params: {
-//       titleStartsWith: userInput,
-//       limit: 12,
-//     },
-//   });
-//   state.commit("setComics", data);
-//   // console.log('USHO U FILTER',data);
-// },
-
-// async filterComicByDateRange(state, range) {
-//   this.state.comics = [];
-//   const date1 = range.from;
-//   const date2 = range.to;
-
-//   const data = await axios.get(API_URI, {
-//     params: {
-//       dateRange: [date1, date2],
-//       limit: 12,
-//     },
-//   });
-
-//   state.commit("setComics", data);
-//   // console.log(data);
-// },

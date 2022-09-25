@@ -75,7 +75,6 @@ export default {
           limit: 12,
         },
       },
-      z: {},
       chunkNum: 3,
     };
   },
