@@ -1,5 +1,5 @@
-export const PUBLIC_KEY = "31c82434bd59a0bc8190e8e264a3f5c5";
-export const PRIVATE_KEY = "2f2ec0d34dc41ce8bd25bca3185356cb045e411b";
+export const PUBLIC_KEY = "";
+export const PRIVATE_KEY = "";
 
 export const API_URI = `http://gateway.marvel.com/v1/public/comics?apikey=${PUBLIC_KEY}`;
 
