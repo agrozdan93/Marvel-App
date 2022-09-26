@@ -1,13 +1,14 @@
 <template>
   <div>
     <b-navbar class="justify-content-between marvel-navbar">
-      <a href="/">
+      <div @click="goHome">
         <svg
           class="ps-3"
           xmlns="http://www.w3.org/2000/svg"
           width="150"
           height="40"
           viewBox="0 0 500 200"
+          style="cursor: pointer"
         >
           <path fill="#f0141e" d="M0 0h500v200H0z" />
           <path
@@ -15,7 +16,7 @@
             fill="#fff"
           />
         </svg>
-      </a>
+      </div>
       <b-navbar-nav class="me-4">
         <b-nav-item @click="() => goToPage('/')"> Home </b-nav-item>
         <b-nav-item @click="() => goToPage('/about')"> About </b-nav-item>
@@ -31,6 +32,10 @@ export default {
       if (link && link !== this.$route.path) {
         this.$router.push(link);
       }
+    },
+    goHome() {
+      this.$router.push("/");
+      this.$store.dispatch("setComicsList", { params: { limit: 12 } });
     },
   },
 };

@@ -87,8 +87,8 @@ export default {
   },
   methods: {
     goBack() {
-      this.$router.go(-1);
-      // this.$store.dispatch("setComicsList", { params: { limit: 12 } });
+      this.$router.push("/");
+      this.$store.dispatch("setComicsList", { params: { limit: 12 } });
     },
 
     reloadPage() {

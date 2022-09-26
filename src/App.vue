@@ -13,9 +13,11 @@ export default {
   components: { Header },
   async created() {
     const query = JSON.parse(window.localStorage.getItem("query"));
+    const defaultQuery = { params: { limit: 12 } };
+
     await this.$store.dispatch(
       "appInit",
-      query === null ? { params: { limit: 12 } } : query
+      query === null ? defaultQuery : query
     );
   },
 };

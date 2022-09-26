@@ -131,7 +131,6 @@ export default {
 
     async viewMore() {
       await this.$store.dispatch("loadMoreComics");
-      console.log("view more...");
     },
 
     reloadPage() {

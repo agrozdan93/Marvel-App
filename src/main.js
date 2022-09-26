@@ -10,18 +10,13 @@ new Vue({
   router,
   store,
   render: (h) => h(App),
-  watch: {
-    $route(to, from) {
-      console.log(to, from);
-    },
-  },
 }).$mount("#app");
 
 /* 
 ** marvel **
 [x] configure(ajdust) env for work
 [x] register on marvel to get api key
-[x] create vue3 new app - vue create marvel-app
+[x] create vue new app - vue create marvel-app
 [x] file structure, env var, api key, etc
 [x] set basic vue rotuer
 [x] add ui bootstrap connect it	
@@ -42,21 +37,22 @@ new Vue({
 [x] responsive check and header adjust
 [x] add load more comic feature
 [x] animation on date range filter and search 
-[x] add call to combine range and search if both active --> dont work one filter when filters are deleted
+[x] add call to combine range and search if both active --> dont work one filter when filters are combined & one deleted
 [x] back btn to the main list
 [x] page refresh on list
 [x] page refresh on main view
 [x] main view withouth thumnail is bigger
 [x] loading main view (use placeholder maybe)
-
--noticed urgent-
-[] remember dates and search input afte filtering and opening some comic
-[] comic list is brouken after double refresh in main view or double refresh on list
-[] set init width for grid
-[] how created empty objects and space for two card if not even
-[] make wrappers to look code clenaer
-[] testing, check bugs and fix it
-[] clean code, made some stuff simplified, adjusting, etc
-[x]create readme file
+[x] set init width for grid
+[x] testing, check bugs and fix it
+[x] clean code, made some stuff simplified, adjusting, etc
+[x] create readme file
 [x] push to git
+
+-noticed issues-
+[] remember dates and search input afte filtering and opening some comic
+[] comic list are broken after double refresh in main view or double refresh on list
+[] how are created empty objects for _loadash
+[] make wrappers to look code clenaer and easier 
+[] dont work one filter when filters are combined & one of them then deleted
 */
